@@ -34,6 +34,14 @@
 			<f:selectItems value="#{student.countryOptions}"/>
 			</h:selectOneMenu>
             <br/><br/>
+           <h:selectOneRadio value="#{student.favoriteLanguage}">
+				<f:selectItem itemValue="Java" itemLabel="Java" />
+				<f:selectItem itemValue="PHP" itemLabel="PHP" />
+				<f:selectItem itemValue="C#" itemLabel="C#" />
+				<f:selectItem itemValue="Ruby" itemLabel="Ruby" />
+				<f:selectItem itemValue="Kotlin" itemLabel="Kotlin" />
+			</h:selectOneRadio>
+            <br/><br/>
 			
 		    <h:commandButton value="Submit" action="student_response" />
 
