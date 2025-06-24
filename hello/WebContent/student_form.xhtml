@@ -34,6 +34,8 @@
 			<f:selectItems value="#{student.countryOptions}"/>
 			</h:selectOneMenu>
             <br/><br/>
+            
+            Select your favorite language:
            <h:selectOneRadio value="#{student.favoriteLanguage}">
 				<f:selectItem itemValue="Java" itemLabel="Java" />
 				<f:selectItem itemValue="PHP" itemLabel="PHP" />
@@ -41,8 +43,15 @@
 				<f:selectItem itemValue="Ruby" itemLabel="Ruby" />
 				<f:selectItem itemValue="Kotlin" itemLabel="Kotlin" />
 			</h:selectOneRadio>
-            <br/><br/>
 			
+            <br/><br/>
+            Select the Operating System you use:
+            <h:selectManyCheckbox value="#{student.operatingSystemList}">
+            <f:selectItem itemValue="Windows" itemLabel="Windows" />
+				<f:selectItem itemValue="Linux" itemLabel="Linux" />
+				<f:selectItem itemValue="Mac" itemLabel="Mac" />
+            </h:selectManyCheckbox>
+			<br/><br/>
 		    <h:commandButton value="Submit" action="student_response" />
 
 		</h:form>

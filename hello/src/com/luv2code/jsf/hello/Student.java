@@ -11,9 +11,10 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private String country;
-	private String favoriteLanguage;
+	private String favoriteLanguage;	
 	List<String> countryOptions;
-	
+	private String[] operatingSystemList;
+
 	//construtor vazio
 	public Student() {
 		countryOptions = new ArrayList<>();
@@ -24,6 +25,8 @@ public class Student {
 		countryOptions.add("Turkey");
 		countryOptions.add("United Kingdom");
 		countryOptions.add("United States");
+		
+		
 	}
 
 	//getters and setters
@@ -61,6 +64,14 @@ public class Student {
 
 	public void setFavoriteLanguage(String favoriteLanguage) {
 		this.favoriteLanguage = favoriteLanguage;
+	}
+
+	public String[] getOperatingSystemList() {
+		return operatingSystemList;
+	}
+
+	public void setOperatingSystemList(String[] operatingSystemList) {
+		this.operatingSystemList = operatingSystemList;
 	}
 	
 	
